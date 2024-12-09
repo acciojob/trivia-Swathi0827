@@ -4,32 +4,51 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-		blockquote{
-			max-width:600px;
-			margin:10px;
-			padding:15px;
-			border-left:8px solid;
-			border-left-color:green;
-			background-color:Pale cyan;
-		}
-		p{
-			font-weight:bold;
-		}
-	</style>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        /* Styling the blockquote */
+        blockquote {
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 15px;
+            border-left: 8px solid green;
+            background-color: #f8fffe;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <div class="faq">
-	<p>What is the capital of India?</p>
-	<!---radio--->
-	<input type="radio" value="abc" name="city"/>New Delhi
-	<br><input type="radio" value="def" name="city"/>Mumbai
-	<blockquote>
-		New Delhi is the capital of India and an administrative district of NCT Delhi.
-	</blockquote>
-    <script type="text/javascript" src="./script.js">
+    <!DOCTYPE html>
+
+    <!-- Quiz Question Section -->
+    <section>
+        <h2>Quiz Question</h2>
+        <p>What is the capital of India?</p>
+        <form>
+            <label>
+                <input type="radio" name="capital" value="new-delhi"> New Delhi
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="capital" value="mumbai"> Mumbai
+            </label>
+        </form>
+    </section>
+
+    <!-- Quotation Section -->
+    <section>
+        <blockquote>
+            "New Delhi is the capital of India and an administrative district of NCT Delhi."  
+            <br> - Wikipedia
+        </blockquote>
+    </section>
+
+
 </script>
 
 </body>
